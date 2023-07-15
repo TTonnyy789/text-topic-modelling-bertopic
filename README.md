@@ -1,4 +1,4 @@
-# implementing topic-modelling approach on the prediction of stock market(FTSE50)
+# implementing topic-modelling techniques on the prediction of stock market(FTSE 100)
 
 Use topic modelling techniques to analyze financial news articles and attempt to build the relationship between the result and real world financial data.
 
