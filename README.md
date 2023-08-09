@@ -4,7 +4,7 @@ This is the project that uses the BERTopic model to predict topics based on inpu
 
 This topic model was trained in several news articles and journals mainly based on Bloom Berg News and Foreign Affairs. The expected effect is to identify the most related topics for the input article, and there are some common topics will present after you input your text, such as Technology, Market, and Economy etc.
 
-![BERTopic Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FMaartenGr%2FBERTopic&psig=AOvVaw1oEVJlLjYF9SeKHB54O-y5&ust=1691637316684000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDGjp3OzoADFQAAAAAdAAAAABAE)
+![BERTopic Logo](https://github.com/TTonnyy789/Pictueres/blob/main/Download/3632492bb621b51af9c5fccc02da54fe0e44374f-1824x1026.png)
 
 ## Table of Contents
 
