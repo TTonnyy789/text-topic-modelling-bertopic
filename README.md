@@ -70,12 +70,12 @@ Once you execute the command, the follow window will present in your terminal. A
 `Make sure there are no spaces or blank lines in the input text`
 
 
-<img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg" alt="Image1" width="400"/>
+<img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg" alt="Image1" width="600"/>
 
 <!-- ![Docker file run successfully](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg) -->
 
 ### Here is a sample.
-<img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg" alt="Image1" width="400"/>
+<img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg" alt="Image1" width="600"/>
 
 <!-- ![Docker file run example](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg) -->
 
