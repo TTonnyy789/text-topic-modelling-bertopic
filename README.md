@@ -69,11 +69,15 @@ Once you execute the command, the follow window will present in your terminal. A
 
 `Make sure there are no spaces or blank lines in the input text`
 
-![Docker file run successfully](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg)
+
+<img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg" alt="Image1" width="400"/>
+
+<!-- ![Docker file run successfully](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg) -->
 
 ### Here is a sample.
+<img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg" alt="Image1" width="400"/>
 
-![Docker file run example](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg)
+<!-- ![Docker file run example](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg) -->
 
 
 ## Building the Docker Image Locally (Optional)
@@ -102,7 +106,12 @@ git clone https://github.com/TTonnyy789/Topic_Modelling.git
 cd Topic_Modelling
 ```
 Once cloned this repositories from Github, you can run following commands and run this dockerized model locally. 
-`--load` is essential in this stage, because this docker file is built based on multi-platform, the initial configuration of building docker image will not store it directly on you device.
+
+`--platform linux/arm64,linux/amd64` would not store image to your local docker images if you not add `--load` or `--push`. 
+
+Therefore, `--load` is essential in this stage, because this docker file is based on multi-platform, the initial configuration of building docker image will not store it directly on you device.
+
+You can change `--load` to `--push` if you want to push this image onto your docker hub.
 
 ```bash
 docker buildx build --platform linux/amd64,linux/arm64 -t ttonnyy789/bertopic-bb --load .
