@@ -65,7 +65,7 @@ docker pull ttonnyy789/bertopic-bb:latest
 docker run -it --rm ttonnyy789/bertopic-bb
 ```
 
-Once you execute the command, the follow window will present in your terminal. After the `Enter text:` appear you can provide any text input when prompted to get the related topics.
+Once you execute the command, the follow result will present on your terminal. After the `Enter text:` appear you can provide any text input when prompted to get the related topics.
 
 `Make sure there are no spaces or blank lines in the input text`
 
