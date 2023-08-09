@@ -74,7 +74,7 @@ Once you execute the command, the follow result will present on your terminal. A
 
 <!-- ![Docker file run successfully](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/input.jpg) -->
 
-### Here is a sample.
+### Here is the simple result.
 <img src="https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg" alt="Image1" width="600"/>
 
 <!-- ![Docker file run example](https://github.com/TTonnyy789/Pictueres/blob/main/Topic_Modelling/result.jpg) -->
