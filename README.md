@@ -80,7 +80,8 @@ Once you execute the command, the follow window will present in your terminal. A
 
 If you want to build the Docker image locally:
 
-The multi-platform docker image builder is required in this case.
+The multi-platform docker image builder is required in this case. 
+Take M1 Apple Silicon device as an example:
 
 ```bash
 docker buildx create --use
