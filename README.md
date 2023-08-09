@@ -72,15 +72,15 @@ The multi-platform docker image builder is required in this case.
 docker buildx create --use
 docker buildx inspect --boostrap
 ```
-You can execute the following commands to check this specific has been installed in your machine.
+You can execute the following commands to check this specific docker builder whether has been installed in your machine or not.
 
 ```bash
 docker images
 ```
 
-If it is successfully installed, you will be able to find a docker image on your local device called 'moby/buildkit'.
+If it is successfully installed, you will be able to find a docker image on your local device called `moby/buildkit`.
 
-Next step, follow the commands below, you would be able to build and run this docker file successfully.
+Next step, execute the commands below, you would be able to build and run this docker file successfully.
 
 ```
 git clone https://github.com/TTonnyy789/Topic_Modelling.git
