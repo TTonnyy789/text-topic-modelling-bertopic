@@ -97,10 +97,19 @@ If it is successfully installed, you will be able to find a docker image on your
 
 Next step, execute the commands below, you would be able to build and run this docker file successfully.
 
-```
+```bash
 git clone https://github.com/TTonnyy789/Topic_Modelling.git
 cd Topic_Modelling
+```
+Once cloned this repositories from Github, you can run following commands and run this dockerized model locally. 
+`--load` is essential in this stage, because this docker file is built based on multi-platform, the initial configuration of building docker image will not store it directly on you device.
+
+```bash
 docker buildx build --platform linux/amd64,linux/arm64 -t ttonnyy789/bertopic-bb --load .
+```
+Last but not least, execute this command and enjoy your topic predicting journey ! !
+
+```bash
 docker run -it --rm ttonnyy789/bertopic-bb
 ```
 
