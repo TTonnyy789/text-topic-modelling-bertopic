@@ -25,8 +25,8 @@ This topic model was trained in several news articles and journals mainly based 
 ## Software And Tools Requirements
 
 - **Docker**: Ensure Docker is installed on your machine. [Download Docker](https://www.docker.com/products/docker-desktop)
-- **Git** (Optional): For cloning and contributing to the repository. [Download Git](https://git-scm.com/downloads)
 - **VSCodeIDE**: Main platform to compose your code. [Download VSCodeIDE](https://code.visualstudio.com)
+- **Git** (Optional): For cloning and contributing to the repository. [Download Git](https://git-scm.com/downloads)
 
 ## Python Environment and Dependencies
 
