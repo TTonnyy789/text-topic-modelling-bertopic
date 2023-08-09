@@ -60,14 +60,29 @@ docker pull ttonnyy789/bertopic-bb:latest
 docker run -it --rm ttonnyy789/bertopic-bb
 ```
 
-Provide any text input when prompted to get the related topics.(make sure that the input text does not contain space or and space line)
+Provide any text input when prompted to get the related topics.(Make sure there are no spaces or blank lines in the input text)
 
 ## Building the Docker Image Locally (Optional)
 
 If you want to build the Docker image locally:
+
+The multi-platform docker image builder is required in this case.
+
 ```bash
 docker buildx create --use
 docker buildx inspect --boostrap
+```
+You can execute the following commands to check this specific has been installed in your machine.
+
+```bash
+docker images
+```
+
+If it is successfully installed, you will be able to find a docker image on your local device called 'moby/buildkit'.
+
+Next step, follow the commands below, you would be able to build and run this docker file successfully.
+
+```
 git clone https://github.com/TTonnyy789/Topic_Modelling.git
 cd Topic_Modelling
 docker buildx build --platform linux/amd64,linux/arm64 -t ttonnyy789/bertopic-bb --load .
@@ -79,5 +94,5 @@ docker run -it --rm ttonnyy789/bertopic-bb
 
 ## Acknowledgements
 
-- Thanks to OpenAI and the BERTopic community for the foundational tools and resources.
-- Special acknowledgment to ChatGPT for project troubleshooting guidance.
+- Thanks to Docker and the BERTopic community for the foundational tools and resources.
+- Special thanks to ChatGPT for project troubleshooting guidance.
