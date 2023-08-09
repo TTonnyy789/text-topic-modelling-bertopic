@@ -1,21 +1,83 @@
-# implementing topic-modelling techniques on the prediction of stock market(e.g. FTSE-100)
+# BERTopic Dockerized Prediction Model
 
-Utilize topic modelling and sentiment analyzing techniques to analyze financial news articles and attempt to build the relationship between the clustered topics, sentiments, and real world financial data.
+This is the project that uses the BERTopic model to predict topics based on input text. This project is containerized using Docker for easy deployment and execution.
 
-### Software And Tools Requirements
+This topic model was trained in several news articles and journals mainly based on Bloom Berg News and Foreign Affairs. The expected effect is to identify the most related topics for the input article, and there are some common topics will present after you input your text, such as Technology, Market, and Economy etc.
 
-1. [Github Account](https://github.com)
-2. [VSCodeIDE](https://code.visualstudio.com)
+![BERTopic Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FMaartenGr%2FBERTopic&psig=AOvVaw1oEVJlLjYF9SeKHB54O-y5&ust=1691637316684000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDGjp3OzoADFQAAAAAdAAAAABAE)
 
-Create a new environment
+## Table of Contents
 
-```python
-conda create -p python==3.8.13
+- [Features](#features)
+- [Software and Tools Requirements](#software-and-tools-requirements)
+- [Python Environment and Dependencies](#python-environment-and-dependencies)
+- [Getting Started](#getting-started)
+- [Building the Docker Image Locally](#building-the-docker-image-locally-optional)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Features 
+
+- **Model Loading**: Seamlessly load a pre-trained BERTopic model.
+- **Prediction Endpoint**: Provide any text input to identify the top related topics.
+- **Cross-Platform Docker Support**: Built for compatibility across both AMD64 & ARM64 architectures.
+
+## Software And Tools Requirements
+
+- **Docker**: Ensure Docker is installed on your machine. [Download Docker](https://www.docker.com/products/docker-desktop)
+- **Git** (Optional): For cloning and contributing to the repository. [Download Git](https://git-scm.com/downloads)
+- **VSCodeIDE**: Main platform to compose your code. [Download VSCodeIDE](https://code.visualstudio.com)
+
+## Python Environment and Dependencies
+
+The application is written in Python and requires Python 3.8.13 on Apple Silicon device. Dependencies are listed in the `requirements.txt` file in this repository, which include:
+
+- BERTopic
+- numpy
+- pandas
+- seaborn
+- transformers
+- tokenizers
+- scikit-learn
+
+For a complete list of dependencies and their versions, refer to `requirements.txt`.
+
+## Getting Started
+
+### Prerequisites
+
+- Docker installed on your machine.
+- Git for cloning the repository.
+
+### Pulling the Docker Image
+
+```bash
+docker pull ttonnyy789/bertopic-bb:latest
 ```
 
+### Running on Docker container
+```bash
+docker run -it --rm ttonnyy789/bertopic-bb
+```
 
+Provide any text input when prompted to get the related topics.(make sure that the input text does not contain space or and space line)
 
+## Building the Docker Image Locally (Optional)
 
+If you want to build the Docker image locally:
+```bash
+docker buildx create --use
+docker buildx inspect --boostrap
+git clone https://github.com/TTonnyy789/Topic_Modelling.git
+cd Topic_Modelling
+docker buildx build --platform linux/amd64,linux/arm64 -t ttonnyy789/bertopic-bb --load .
+docker run -it --rm ttonnyy789/bertopic-bb
+```
 
 ## License
 [MIT]((https://choosealicense.com/licenses/mit/))
+
+## Acknowledgements
+
+- Thanks to OpenAI and the BERTopic community for the foundational tools and resources.
+- Special acknowledgment to ChatGPT for project troubleshooting guidance.
