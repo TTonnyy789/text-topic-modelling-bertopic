@@ -107,7 +107,7 @@ cd Topic_Modelling
 ```
 Once cloned this repositories from Github, you can run following commands and run this dockerized model locally. 
 
-`--platform linux/arm64,linux/amd64` would not store image to your local docker images if you not add `--load` or `--push`. 
+In this case, this image is built with `--platform linux/arm64,linux/amd64` setting, so it would not store image to your local device automatically if you did not add `--load`. 
 
 Therefore, `--load` is essential in this stage, because this docker file is based on multi-platform, the initial configuration of building docker image will not store it directly on you device.
 
