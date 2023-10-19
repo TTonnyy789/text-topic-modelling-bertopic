@@ -1,4 +1,4 @@
-# BERTopic Dockerized Prediction Model
+# Topic Classification and Keyword Extraction from News Articles using BERTopic
 
 This is the project that uses the BERTopic model to predict topics based on input text. This project is containerized using Docker for easy deployment and execution.
 
