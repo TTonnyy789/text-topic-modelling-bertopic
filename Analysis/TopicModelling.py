@@ -1,3 +1,4 @@
+#%%#
 import os
 import numpy as np
 import pandas as pd
@@ -10,7 +11,7 @@ from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 
 # load the data collected from open source platform
-df7 = pd.read_csv('/Users/ttonny0326/GitHub_Project/Topic_Modelling/News/Bloom_Berg_News.csv')
+df7 = pd.read_csv('/Users/ttonny0326/GitHub_Project/text-topic-modelling-bertopic/News/Bloom_Berg_News.csv')
 df7 = df7.drop_duplicates()
 
 # data pre processing
@@ -47,5 +48,7 @@ os.environ['OMP_DISPLAY_ENV'] = 'FALSE'
 model.visualize_topics()
 model.visualize_hierarchy(top_n_topics=30)
 
+
+#%%#
 # model save as a pickle file
 model.save("BloomBerg_model_test", serialization="pickle")
